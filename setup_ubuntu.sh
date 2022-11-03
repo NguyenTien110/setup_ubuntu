@@ -1,7 +1,7 @@
 # install ide
 sudo snap install code --classic
 
-sudo snap install pycharm-community --classic
+sudo snap install pycharm-professional --classic
 
 sudo snap install intellij-idea-community --classic
 
