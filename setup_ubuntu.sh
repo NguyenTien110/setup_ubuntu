@@ -7,6 +7,8 @@ sudo snap install intellij-idea-community --classic
 
 sudo snap install webstorm --classic
 
+sudo snap install postman
+
 # install package
 sudo apt update
 
