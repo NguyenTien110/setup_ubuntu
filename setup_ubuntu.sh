@@ -10,7 +10,7 @@ sudo snap install webstorm --classic
 # install package
 sudo apt update
 
-sudo apt install -y curl
+sudo apt install -y curl openvpn
 
 sudo apt install -y git gcc g++
 
