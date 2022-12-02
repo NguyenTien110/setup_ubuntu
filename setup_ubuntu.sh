@@ -5,6 +5,8 @@ sudo snap install pycharm-professional --classic
 
 sudo snap install intellij-idea-community --classic
 
+sudo snap install webstorm --classic
+
 # install package
 sudo apt update
 
