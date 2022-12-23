@@ -14,6 +14,8 @@ sudo apt update
 
 sudo apt install -y curl openvpn
 
+sudo apt-get install network-manager-openvpn-gnome -y
+
 sudo apt install -y git gcc g++
 
 # install ibus bamboo -> go tieng viet
