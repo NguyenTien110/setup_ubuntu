@@ -18,6 +18,7 @@ sudo apt-get install openvpn network-manager-openvpn network-manager-openvpn-gno
 sudo /etc/init.d/networking restart
 
 sudo apt install -y git gcc g++
+sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
 
 # install ibus bamboo -> go tieng viet
 sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo
