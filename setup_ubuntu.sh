@@ -77,3 +77,5 @@ docker-compose --version
 # bash
 # conda create -n backend python=3.7
 # rm ./Anaconda3-2022.10-Linux-x86_64.sh
+
+git config --global --add safe.directory '*'
