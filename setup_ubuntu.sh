@@ -14,7 +14,8 @@ sudo apt update
 
 sudo apt install -y curl openvpn
 
-sudo apt-get install network-manager-openvpn-gnome -y
+sudo apt-get install openvpn network-manager-openvpn network-manager-openvpn-gnome network-manager-vpnc -y
+sudo /etc/init.d/networking restart
 
 sudo apt install -y git gcc g++
 
