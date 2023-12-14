@@ -1,11 +1,49 @@
 # install ide
-sudo snap install code --classic
 
-sudo snap install pycharm-professional --classic
+# không install code -> tải từ trang chính tránh lôi không gõ được tiếng việt
+# sudo snap install code --classic
 
-sudo snap install intellij-idea-community --classic
+# không dùng snap để lây license
+# sudo snap install pycharm-professional --classic
+# sudo snap install intellij-idea-community --classic
+# sudo snap install webstorm --classic
 
-sudo snap install webstorm --classic
+sudo apt update
+
+cd /tmp
+
+wget https://ipfs.oceanprotocol.com/ipfs/bafybeia4nrbuvpfd6k7lkorzgjw3t6totaoko7gmvq5pyuhl2eloxnfiri/files/jetbra-ded4f9dc4fcb60294b21669dafa90330f2713ce4.zip
+sudo unzip ./jetbra-ded4f9dc4fcb60294b21669dafa90330f2713ce4.zip -d ~/
+cd ~/jetbra
+
+./script/install.sh
+
+cd /tmp
+
+sudo wget https://download.jetbrains.com/webstorm/WebStorm-2023.2.5.tar.gz
+sudo tar -xzf ./WebStorm-2023.2.5.tar.gz -C /opt
+sudo mv /opt/WebStorm-232.10227.9/webstorm64.vmoptions /opt/WebStorm-232.10227.9/webstorm64.vmoptions.bk
+sudo mv ~/jetbra/webstorm.vmoptions /opt/WebStorm-232.10227.9/webstorm64.vmoptions
+
+sudo wget https://download.jetbrains.com/python/pycharm-professional-2023.2.5.tar.gz
+sudo tar -xzf ./pycharm-2023.2.5.tar.gz -C /opt
+sudo mv /opt/pycharm-2023.2.5/pycharm64.vmoptions /opt/pycharm-2023.2.5/pycharm64.vmoptions.bk
+sudo mv ~/jetbra/pycharm.vmoptions /opt/pycharm-2023.2.5/pycharm64.vmoptions
+
+sudo wget https://download.jetbrains.com/idea/ideaIU-2023.2.5.tar.gz
+sudo tar -xzf ./ideaIU-2023.2.5.tar.gz -C /opt
+sudo mv /opt/idea-IU-232.10227.8/idea64.vmoptions /opt/idea-IU-232.10227.8/idea64.vmoptions.bk
+sudo mv ~/jetbra/idea.vmoptions /opt/idea-IU-232.10227.8/idea64.vmoptions
+
+sudo wget https://download.jetbrains.com/ruby/RubyMine-2023.2.5.tar.gz
+sudo tar -xzf ./RubyMine-2023.2.5.tar.gz -C /opt
+sudo mv /opt/RubyMine-2023.2.5/rubymine64.vmoptions /opt/RubyMine-2023.2.5/rubymine64.vmoptions.bk
+sudo mv ~/jetbra/rubymine.vmoptions /opt/RubyMine-2023.2.5/rubymine64.vmoptions
+
+sudo wget https://download.jetbrains.com/webide/PhpStorm-2023.2.4.tar.gz
+sudo tar -xzf ./PhpStorm-2023.2.4.tar.gz -C /opt
+sudo mv /opt/PhpStorm-232.10227.13/phpstorm64.vmoptions /opt/PhpStorm-232.10227.13/phpstorm64.vmoptions.bk
+sudo mv ~/jetbra/phpStorm.vmoptions /opt/PhpStorm-232.10227.13/phpstorm64.vmoptions
 
 sudo snap install postman
 
