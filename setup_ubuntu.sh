@@ -26,24 +26,24 @@ sudo mv /opt/WebStorm-232.10227.9/webstorm64.vmoptions /opt/WebStorm-232.10227.9
 sudo mv ~/jetbra/webstorm.vmoptions /opt/WebStorm-232.10227.9/webstorm64.vmoptions
 
 sudo wget https://download.jetbrains.com/python/pycharm-professional-2023.2.5.tar.gz
-sudo tar -xzf ./pycharm-2023.2.5.tar.gz -C /opt
-sudo mv /opt/pycharm-2023.2.5/pycharm64.vmoptions /opt/pycharm-2023.2.5/pycharm64.vmoptions.bk
-sudo mv ~/jetbra/pycharm.vmoptions /opt/pycharm-2023.2.5/pycharm64.vmoptions
+sudo tar -xzf ./pycharm-professional-2023.2.5.tar.gz -C /opt
+sudo mv /opt/pycharm-2023.2.5/pycharm64.vmoptions /opt/pycharm-professional-2023.2.5/pycharm64.vmoptions.bk
+sudo mv ~/jetbra/pycharm.vmoptions /opt/pycharm-professional-2023.2.5/pycharm64.vmoptions
 
 sudo wget https://download.jetbrains.com/idea/ideaIU-2023.2.5.tar.gz
 sudo tar -xzf ./ideaIU-2023.2.5.tar.gz -C /opt
 sudo mv /opt/idea-IU-232.10227.8/idea64.vmoptions /opt/idea-IU-232.10227.8/idea64.vmoptions.bk
 sudo mv ~/jetbra/idea.vmoptions /opt/idea-IU-232.10227.8/idea64.vmoptions
 
-sudo wget https://download.jetbrains.com/ruby/RubyMine-2023.2.5.tar.gz
-sudo tar -xzf ./RubyMine-2023.2.5.tar.gz -C /opt
-sudo mv /opt/RubyMine-2023.2.5/rubymine64.vmoptions /opt/RubyMine-2023.2.5/rubymine64.vmoptions.bk
-sudo mv ~/jetbra/rubymine.vmoptions /opt/RubyMine-2023.2.5/rubymine64.vmoptions
+# sudo wget https://download.jetbrains.com/ruby/RubyMine-2023.2.5.tar.gz
+# sudo tar -xzf ./RubyMine-2023.2.5.tar.gz -C /opt
+# sudo mv /opt/RubyMine-2023.2.5/rubymine64.vmoptions /opt/RubyMine-2023.2.5/rubymine64.vmoptions.bk
+# sudo mv ~/jetbra/rubymine.vmoptions /opt/RubyMine-2023.2.5/rubymine64.vmoptions
 
-sudo wget https://download.jetbrains.com/webide/PhpStorm-2023.2.4.tar.gz
-sudo tar -xzf ./PhpStorm-2023.2.4.tar.gz -C /opt
-sudo mv /opt/PhpStorm-232.10227.13/phpstorm64.vmoptions /opt/PhpStorm-232.10227.13/phpstorm64.vmoptions.bk
-sudo mv ~/jetbra/phpStorm.vmoptions /opt/PhpStorm-232.10227.13/phpstorm64.vmoptions
+# sudo wget https://download.jetbrains.com/webide/PhpStorm-2023.2.4.tar.gz
+# sudo tar -xzf ./PhpStorm-2023.2.4.tar.gz -C /opt
+# sudo mv /opt/PhpStorm-232.10227.13/phpstorm64.vmoptions /opt/PhpStorm-232.10227.13/phpstorm64.vmoptions.bk
+# sudo mv ~/jetbra/phpStorm.vmoptions /opt/PhpStorm-232.10227.13/phpstorm64.vmoptions
 
 sudo snap install postman
 
@@ -110,11 +110,14 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 docker-compose --version
 
-# # install anaconda3
-# wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
-# bash ./Anaconda3-2022.10-Linux-x86_64.sh
-# bash
-# conda create -n backend python=3.7
-# rm ./Anaconda3-2022.10-Linux-x86_64.sh
+# install anaconda3
+wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
+bash ./Anaconda3-2022.10-Linux-x86_64.sh
+bash
+conda create -n py37 python=3.7
+rm ./Anaconda3-2022.10-Linux-x86_64.sh
 
 git config --global --add safe.directory '*'
+
+
+sudo apt install flameshot -y
